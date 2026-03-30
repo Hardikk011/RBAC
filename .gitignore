@@ -1,0 +1,32 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases (Local data is NOT pushed to GitHub)
+*.sqlite3
+backend/db.sqlite3
+
+# Environment variables (Secrets are NOT pushed to GitHub)
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Editor and OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo

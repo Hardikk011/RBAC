@@ -1,0 +1,131 @@
+.check-page {
+  animation: fadeIn 0.3s ease;
+}
+
+.checker-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-color);
+  margin-bottom: 28px;
+}
+
+.checker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checker-inputs {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+}
+
+.checker-btn {
+  align-self: flex-start;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+}
+
+.checker-error {
+  margin-top: 16px;
+  background: #FEF2F2;
+  color: #DC2626;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #FECACA;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* ─── Result cards ─────────────────────────── */
+
+.result-card {
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  animation: resultPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.result--granted {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  border: 2px solid #6EE7B7;
+}
+
+.result--denied {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%);
+  border: 2px solid #FCA5A5;
+}
+
+.result-icon {
+  margin-bottom: 12px;
+  animation: bounce 0.5s ease 0.2s;
+}
+
+.result-status {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.result--granted .result-status {
+  color: #065F46;
+}
+
+.result--denied .result-status {
+  color: #991B1B;
+}
+
+.result-details {
+  display: inline-flex;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.result-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.result-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.result-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.result-message {
+  font-size: 1rem;
+  color: var(--text-primary);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@keyframes resultPop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}

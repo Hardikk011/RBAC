@@ -1,0 +1,34 @@
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 2px 3px;
+}
+
+.badge--indigo {
+  background: #EBF4FF;
+  color: #2B6CB0;
+}
+
+.badge--cyan {
+  background: #E6FFFA;
+  color: #285E61;
+}
+
+.badge--emerald {
+  background: #F0FFF4;
+  color: #276749;
+}
+
+.badge--rose {
+  background: #FFF5F5;
+  color: #9B2C2C;
+}
+
+.badge--amber {
+  background: #FFFBEB;
+  color: #9C4221;
+}
